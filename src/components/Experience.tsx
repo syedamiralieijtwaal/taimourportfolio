@@ -34,25 +34,27 @@ const experiences = [
 export default function Experience() {
   return (
     <section id="experience" className="border-t border-border py-12">
-      <h2 className="mb-8 text-2xl font-bold">Experience</h2>
-      <div className="space-y-8">
+      <h2 className="mb-8 font-serif text-2xl font-bold">Experience</h2>
+      <div className="space-y-6">
         {experiences.map((exp) => (
           <div
             key={exp.date + exp.company}
-            className="grid grid-cols-1 gap-1 sm:grid-cols-[9rem_1fr] sm:gap-4"
+            className="rounded-xl border border-border bg-bg-card p-5 shadow-sm transition-all hover:shadow-md border-l-4 border-l-accent"
           >
-            <span className="font-mono text-xs text-text-muted pt-0.5">
-              {exp.date}
-            </span>
-            <div>
-              <h3 className="text-base font-semibold">{exp.title}</h3>
-              <p className="text-sm text-accent">{exp.company}</p>
-              <p className="text-xs text-text-muted">{exp.location}</p>
-              {exp.description && (
-                <p className="mt-1 text-sm leading-relaxed text-text-muted">
-                  {exp.description}
-                </p>
-              )}
+            <div className="grid grid-cols-1 gap-1 sm:grid-cols-[9rem_1fr] sm:gap-4">
+              <span className="font-mono text-xs text-text-muted pt-0.5">
+                {exp.date}
+              </span>
+              <div>
+                <h3 className="text-base font-semibold">{exp.title}</h3>
+                <p className="font-serif text-sm text-accent">{exp.company}</p>
+                <p className="text-xs text-text-muted">{exp.location}</p>
+                {exp.description && (
+                  <p className="mt-2 text-sm leading-relaxed text-text-muted">
+                    {exp.description}
+                  </p>
+                )}
+              </div>
             </div>
           </div>
         ))}

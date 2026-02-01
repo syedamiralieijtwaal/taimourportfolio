@@ -1,8 +1,10 @@
 export default function Hero() {
   return (
     <section className="pb-12 pt-20">
-      <h1 className="text-3xl font-bold leading-tight sm:text-4xl">Taimoor Hussain</h1>
-      <p className="mt-2 text-lg font-medium text-accent">
+      <h1 className="font-serif text-4xl font-bold leading-tight sm:text-5xl">
+        Taimoor Hussain
+      </h1>
+      <p className="mt-3 text-lg font-medium text-accent">
         Senior Internal Auditor @ Eplanet Global
       </p>
       <p className="mt-4 max-w-xl text-base leading-relaxed text-text-muted">

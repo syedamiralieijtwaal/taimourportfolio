@@ -18,12 +18,12 @@ const skills = [
 export default function Skills() {
   return (
     <section id="skills" className="border-t border-border py-12">
-      <h2 className="mb-8 text-2xl font-bold">Skills</h2>
+      <h2 className="mb-8 font-serif text-2xl font-bold">Skills</h2>
       <div className="flex flex-wrap gap-2">
         {skills.map((skill) => (
           <span
             key={skill}
-            className="rounded-full border border-border bg-bg-card px-3.5 py-1.5 text-xs text-text-muted transition-colors hover:border-accent hover:text-text"
+            className="rounded-full border border-border bg-bg-card px-3.5 py-1.5 text-xs text-text-muted shadow-sm transition-colors hover:border-accent hover:text-accent"
           >
             {skill}
           </span>
